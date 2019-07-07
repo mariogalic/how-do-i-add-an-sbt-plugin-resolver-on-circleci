@@ -9,7 +9,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "how-do-i-add-an-sbt-plugin-resolver-on-circleci",
     libraryDependencies += scalaTest % Test,
-    resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
+    resolvers in ThisBuild += "Artima Maven Repository" at "http://repo.artima.com/releases"
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
